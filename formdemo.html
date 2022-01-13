@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Form Demo</title>
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <form>
+        <div class="container-fluid">
+            <h2 class="py-3 text-center">Registration Form</h2>
+            <form>
+                <div>
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" name="name" placeholder="Enter Your Name"
+                        required><br>
+                </div>
+                <div>
+                    <label for="pwd" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="pwd" name="password"
+                        placeholder="Enter Your Password" required><br>
+                </div>
+                <div>
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email"
+                        required><br>
+                </div>
+                <div>
+                    <label for="phoneno" class="form-label">Phone no</label>
+                    <input type="tel" id="phoneno" class="form-control" name="phoneno" maxlength="10"
+                        placeholder="Enter Your Phone no" required><br>
+
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="male" name="choose_gender">
+                    <label for="male" class="form-check-label">Male</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="female" name="choose_gender">
+                    <label for="female" class="form-check-label">Female</label><br><br>
+                </div>
+                <div>
+                    <select class="form-select" id="degree" name="degreee" required>
+                        <option value="select" selected>Select Degree</option>
+                        <option value="BE">BE/B.TECH</option>
+                        <option value="MSC">MSC</option>
+                        <option value="MCA">MCA</option>
+                        <option value="ME">ME/M.TECH</option>
+                        <option></option>
+                    </select><br>
+                </div>
+                <div>
+                    <select class="form-select" id="field" name="field" required>
+                        <option value="select" selected>Select Field</option>
+                        <option value="IT">Information Technology</option>
+                        <option value="Computer">Computer</option>
+                        <option value="Electrical">Electrical</option>
+                        <option value="CS">Computer Science</option>
+                        <option></option>
+                    </select><br>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="chess" name="chess">
+                    <label for="chess" class="form-check-label">Chess</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="cricket" name="cricket">
+                    <label for="cricket" class="form-check-label">Cricket</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="reading" name="reading">
+                    <label for="reading" class="form-check-label">Reading</label><br><br>
+                </div>
+                <div>
+                    <textarea class="form-control" id="address" name="address" rows="5" cols="20"
+                        placeholder="Enter Your Address" style="resize: none;"></textarea><br>
+                </div>
+                <div>
+                    <label for="resume" class="form-label">Attach Resume</label>
+                    <input type="file" name="resume" id="resume" class="form-control"><br>
+                </div>
+                <button type="submit" class="btn btn-success">Submit</button>
+
+                <button type="reset" class="btn btn-danger">Reset</button>
+
+
+
+        </div>
+    </form>
+
+</body>
+
+</html>
